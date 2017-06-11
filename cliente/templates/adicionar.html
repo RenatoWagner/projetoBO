@@ -1,0 +1,33 @@
+<div class="panel panel-default">
+	<div class="panel-heading">
+	  <p class="panel-title"><span style="color:#5bc0de;" class="glyphicon glyphicon-plus"> </span>Adicionar novo Boletim de Ocorrêcia</p>
+	</div>
+	<div class="panel-body">
+		<form ng-submit="adicionarBO()">
+    <div class="form-group">
+      <label for="ocorrencia">Ocorrência:</label>
+      <input type="text" class="form-control" id="ocorrencia" ng-model="BO.ocorrencia">
+    </div>
+    <div class="form-group">
+      <label for="data">Data:</label>
+      <input type="text" class="form-control" id="data" ng-model="BO.data">
+    </div>
+    <div class="form-group">
+      <label for="local">Local:</label>
+      <input type="text" class="form-control" id="local" ng-model="BO.local">
+    </div>
+    <div class="form-group">
+      <label for="envolvidos">Envolvidos:</label>
+      <input type="text" class="form-control" id="envolvidos" ng-model="BO.envolvidos">
+      <div class="form-group">
+      <label for="bensEnvolvidos">Bens Envolvidos</label>
+      <input type="text" class="form-control" id="bensEnvolvidos" ng-model="BO.bensEnvolvidos">
+      <div class="form-group">
+      <label for="dinamicaDoFato">Dinâmica do Fato</label>
+      <input type="text" class="form-control" id="dinamicaDoFato" ng-model="BO.dinamicaDoFato">
+    </div>
+    <button type="submit" style="color:#5bc0de;" class="btn btn-default">Salvar</button>
+    <a href="#/BOs" class="btn btn-default">Cancelar</a>
+</form>
+    <div>
+<div>

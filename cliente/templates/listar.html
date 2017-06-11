@@ -1,0 +1,30 @@
+<div class="panel panel-default" ng-init="getBOs()">
+	<div class="panel-heading">
+	  <p class="panel-title"><span style="color:#5bc0de;"
+class="glyphicon glyphicon-list"> </span>Lista de BOs</p>
+	</div>
+	<div class="panel-body">
+		<table class="table table-striped">
+			<thead>
+			<tr>
+			  <th>Ocorrência</th>
+			  <th>Data</th>
+			  <th>Local</th>
+			  <th>Opções</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr ng-repeat="BO in BOs">
+			  <td>{{ BO.ocorrencia }}</td>
+			  <td>{{ BO.data }}</td>
+			  <td>{{ BO.local }}</td>
+			  <td>
+			    <a href="#!/BOs/{{BO._id}}/mostrar" class="btn btn-info">Mostrar</a>
+			    <a href="#!/BOs/{{BO._id}}/editar" class="btn btn-success"><span class="glyphicon glyphicon-edit"> </span> Editar</a>
+			  	<a ng-click="apagarBO(BO._id)" class="btn btn-danger"><span class="glyphicon glyphicon-trash"> </span>Deletar</a>
+			  </td>
+			</tr>
+			</tbody>
+		</table>
+    <div>
+<div>

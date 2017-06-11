@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Gerar PDF</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="jspdf.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.debug.js"></script>
+
+        <script type="text/javascript">
+
+
+function genPDF() {
+var doc = new jsPDF();
+doc.text(20,20,'TEST Message!!');
+doc.addPage();
+}
+
+</script>
+    </head>
+    <body>
+        <a href="javascript:genPDF()">Gerar PDF</a>
+    </body>
+
+</html>

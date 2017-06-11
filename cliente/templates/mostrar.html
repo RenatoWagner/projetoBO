@@ -1,0 +1,24 @@
+
+
+<div class="panel panel-default" ng-init="mostrarBO()">
+	<div class="panel-heading">
+	  <p class="panel-title"> Boletim de Ocorrência </p>
+	</div>
+	<div class="panel-body">
+		<form>
+		<div class="form-group">
+		 <label class="form-control">Ocorrência: {{ BO.ocorrencia }}</label>
+		 <label class="form-control">Data: {{ BO.data }}</label>
+		 <label class="form-control">Local: {{ BO.local }}</label>
+		 <label class="form-control">Envolvidos: {{ BO.envolvidos }}</label>
+		 <label class="form-control">Bens Envolvidos: {{ BO.bensEnvolvidos }}</label>
+		 <label class="form-control" style="height:100px">Dinâmica do Fato: {{ BO.dinamicaDoFato }}</label>
+		 <label class="form-control">ID: {{ BO._id }}</label>
+		<a href="#/BOs" class="btn btn-default">Voltar</a>
+		</div>
+	</form>
+    <div>
+<div>
+
+
+	<a onClick="gerarPDF()" class="btn btn-danger">Gerar PDF</a>

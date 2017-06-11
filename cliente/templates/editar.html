@@ -1,0 +1,34 @@
+<div class="panel panel-default" ng-init="mostrarBO()">
+	<div class="panel-heading">
+	  <p class="panel-title"><span style="color:#5bc0de;"
+class="glyphicon glyphicon-edit"> </span>Editar Boletim de Ocorrência</p>
+	</div>
+	<div class="panel-body">
+		<form ng-submit="atualizarBO()">
+    <div class="form-group">
+      <label for="ocorrencia">Ocorrência:</label>
+      <input type="text" class="form-control" id="ocorrencia" ng-model="BO.ocorrencia" value="BO.ocorrencia">
+    </div>
+    <div class="form-group">
+      <label for="data">Data:</label>
+      <input type="text" class="form-control" id="data" ng-model="BO.data" value="BO.data">
+    </div>
+    <div class="form-group">
+      <label for="local">Local:</label>
+      <input type="text" class="form-control" id="local" ng-model="BO.local" value="BO.local">
+    </div>
+    <div class="form-group">
+      <label for="envolvidos">Envolvidos:</label>
+      <input type="text" class="form-control" id="envolvidos" ng-model="BO.envolvidos" value="BO.envolvidos">
+      <div class="form-group">
+      <label for="bensEnvolvidos">Bens Envolvidos:</label>
+      <input type="text" class="form-control" id="envolvidos" ng-model="BO.bensEnvolvidos" value="BO.bensEnvolvidos">
+      <div class="form-group">
+      <label for="dinamicaDoFato">Dinâmica do Fato:</label>
+      <input type="text" class="form-control" id="dinamicaDoFato" ng-model="BO.dinamicaDoFato" value="BO.dinamicaDoFato">
+    </div>
+    <button type="submit" style="color:#5bc0de;" class="btn btn-default">Atualizar</button>
+    <a href="#/BOs" class="btn btn-default">Cancelar</a>
+</form>
+    <div>
+<div>

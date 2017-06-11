@@ -1,0 +1,17 @@
+{
+  "name": "projetobo",
+  "version": "1.0.0",
+  "description": "Projeto para a disciplina de TAP segundo estágio",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Renato Wagner e Danilo Queiroga",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "mongoose": "^4.10.4"
+  }
+}
